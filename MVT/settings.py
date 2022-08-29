@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MVT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r"F:\Curso\proyecto_1\MVT\datos_familiares\Plantilla"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -7,3 +7,4 @@ class familiares(models.Model):
     apellido = models.CharField(max_length=64)
     fecha_nacimiento = models.DateField()
     peso_kg = models.IntegerField()
+    
