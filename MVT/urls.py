@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('MiPrimerMVT',include('datos_familiares.urls'))
+    path('MiPrimerMVT/',include('datos_familiares.urls'))
 ]

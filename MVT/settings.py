@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'datos_familiares'
+    'datos_familiares',
 ]
 
 MIDDLEWARE = [
@@ -52,10 +54,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'MVT.urls'
 
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"F:\Curso\proyecto_1\MVT\datos_familiares\Plantilla"],
+        'DIRS': [os.path.join(BASE_DIR,"../MVT-LucaGaravelli/datos_familiares/Plantilla")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

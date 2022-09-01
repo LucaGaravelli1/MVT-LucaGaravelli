@@ -8,6 +8,8 @@ from datos_familiares.models import familiares
 def datos_familiares(request):
     familiar = familiares.objects.all()
     coleccion = {'familiares':familiar}
+    
     plantilla = loader.get_template("plantilla1.html")
     documento = plantilla.render(coleccion)
+    
     return HttpResponse (documento)
